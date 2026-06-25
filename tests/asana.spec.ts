@@ -20,7 +20,7 @@ test.describe('Asana Board Data-Driven Validation', () => {
     await expect(page.getByRole('button', { name: 'Logout' })).toBeVisible();
   });
 
-  // THE MAGIC LOOP: This replaces all duplicated test blocks
+  // Loop through JSON objects for each test scenario
   for (const scenario of testScenarios) {
     
     test(`${scenario.id}: Verify "${scenario.taskName}" in ${scenario.appName} -> ${scenario.columnName}`, async ({ page }) => {
