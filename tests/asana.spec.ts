@@ -3,7 +3,7 @@ import testScenarios from '../testData.json';
 
 test.describe('Asana Board Data-Driven Validation', () => {
 
-  // Your existing beforeEach login hook lives here securely
+  // Authenticate log-in before each test
   test.beforeEach(async ({ page }) => {
 
     // 1. Navigate to the login page
